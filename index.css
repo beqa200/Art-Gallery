@@ -1,0 +1,500 @@
+@font-face {
+  font-family: shoulersBold;
+  src: url("./fonts/big_shoulders/BigShouldersDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: shoulersExtra;
+  src: url("./fonts/big_shoulders/BigShouldersDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: outfitLite;
+  src: url("./fonts/outfit/Outfit-Light.ttf");
+}
+
+body {
+  width: 100vw;
+  margin-left: 0px;
+  margin-top: 0px;
+  overflow-x: hidden;
+}
+
+#first .mobileImg {
+  width: 100%;
+}
+
+.tabletImg,
+#mainTabletAndDesktop,
+.desktopImg {
+  display: none;
+}
+
+#first h1 {
+  font-family: shoulersExtra;
+  font-size: 60px;
+  max-width: 263.8px;
+  margin-left: 4.5%;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  color: #151515;
+}
+
+#first p {
+  font-family: outfitLite;
+  font-size: 18px;
+  line-height: 28px;
+  line-height: 123%;
+  color: #444444;
+  margin-left: 4.5%;
+  margin-top: 32px;
+  width: 91%;
+}
+
+a {
+  text-decoration: none;
+  height: 72px;
+  display: flex;
+  width: 260px;
+  margin-left: 4.5%;
+  margin-top: 32px;
+}
+
+.buttonLeft {
+  background-color: #151515;
+  color: #ffffff;
+  height: 72px;
+  width: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonRight {
+  background-color: #d5966c;
+  width: 8px;
+  height: 24px;
+  padding: 24px;
+}
+
+.buttonLeft h2 {
+  font-family: shoulersExtra;
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 100%;
+  letter-spacing: 3.64px;
+}
+
+#first a:hover .buttonLeft {
+  background-color: #d5966c;
+}
+
+#first a:hover .buttonRight {
+  background-color: #151515;
+}
+
+#first a:hover .buttonRight img {
+  background-color: #151515;
+}
+
+#main {
+  display: grid;
+  width: 91%;
+  margin-left: 4.5%;
+  grid-template-columns: 100%;
+  grid-template-rows: 85vw 115px 112px 135.5vw 57vw * 0.78px 309px;
+  margin: auto;
+  margin-top: 120px;
+  height: 100%;
+}
+
+#main .roomMobile {
+  grid-area: 1 / 1;
+  width: 100%;
+}
+
+#main .firstTitle,
+#mainTabletAndDesktop .firstTitle {
+  font-family: shoulersExtra;
+  font-size: 50px;
+  line-height: 45px;
+  grid-area: 2 / 1;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+#main p,
+#mainTabletAndDesktop p {
+  grid-area: 3 / 1;
+  font-family: outfitLite;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  height: 100%;
+}
+
+#main .chairMobile {
+  grid-area: 4 / 1;
+  width: 100%;
+  margin-top: 32px;
+}
+
+#main .museumMobile {
+  grid-area: 5 / 1;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#main .last,
+#mainTabletAndDesktop .last {
+  grid-area: 6 / 1;
+  background-color: black;
+  height: 293px;
+  margin-top: 16px;
+}
+
+#main .last h2,
+#mainTabletAndDesktop .last h2 {
+  font-family: shoulersExtra;
+  font-size: 50px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-left: 24px;
+  width: 86%;
+}
+
+#main .last p,
+#mainTabletAndDesktop .last p {
+  font-family: outfitLite;
+  font-size: 18px;
+  height: 84px;
+  margin-left: 24px;
+  width: 86%;
+  color: #ffffff;
+}
+
+#footer {
+  background: black;
+  color: white;
+  height: 346px;
+  margin-top: 120px;
+  margin-bottom: -9px;
+}
+
+#footer h3 {
+  font-family: shoulersBold;
+  width: 110.05px;
+  font-size: 27px;
+  margin-left: 32px;
+  padding-top: 48px;
+}
+
+#footer p {
+  font-family: outfitLite;
+  font-size: 16px;
+  line-height: 26px;
+  line-height: 129%;
+  width: 83%;
+  height: 85px;
+  margin-left: 32px;
+  margin-bottom: 0px;
+}
+
+.social {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: 38px;
+  margin-left: 32px;
+}
+
+.social img:hover {
+  filter: invert(80%) sepia(6%) saturate(4757%) hue-rotate(323deg)
+    brightness(370%) contrast(85%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileImg,
+  #main,
+  .roomDesktop,
+  .chairDesktop,
+  .museumDesktop {
+    display: none;
+  }
+
+  .tabletImg,
+  #mainTabletAndDesktop {
+    display: initial;
+  }
+
+  .tabletImg {
+    width: 57%;
+    max-width: 550px;
+  }
+  #first {
+    display: flex;
+  }
+
+  #first h1 {
+    margin-top: 145px;
+  }
+  #first p {
+    width: 342px;
+  }
+  .forFlex {
+    margin-left: -75px;
+    width: 500px;
+  }
+  #first h1 {
+    font-size: 70px;
+    max-width: 339px;
+  }
+
+  #mainTabletAndDesktop {
+    display: grid;
+    grid-template-columns: 398px 280px;
+    grid-template-rows: 400px 313px 396px;
+    height: 1131px;
+    width: 689px;
+    margin: auto;
+    margin-top: 120px;
+    gap: 11px;
+  }
+
+  #mainTabletAndDesktop .firstTitle {
+    width: 223px;
+    height: 135px;
+  }
+
+  #mainTabletAndDesktop p {
+    width: 223px;
+    height: 140px;
+  }
+  #mainTabletAndDesktop .grid-1 {
+    grid-area: 1 / 1;
+  }
+
+  #mainTabletAndDesktop .roomTablet {
+    grid-area: 1 / 2;
+    width: 398px;
+    height: 400px;
+    margin-left: -118px;
+  }
+
+  #mainTabletAndDesktop .chairTablet {
+    grid-area: 2 / 1;
+    width: 398px;
+    height: 720px;
+  }
+
+  #mainTabletAndDesktop .museumTablet {
+    grid-area: 2 / 2;
+    width: 280px;
+    height: 313px;
+  }
+
+  #mainTabletAndDesktop .last {
+    grid-area: 3 / 2;
+    width: 280px;
+    height: 396px;
+    margin-top: 0px;
+  }
+
+  #mainTabletAndDesktop .last h2 {
+    margin-top: 82px;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 216px;
+  }
+
+  #footer p {
+    width: 281px;
+  }
+
+  #footer .social img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tabletImg,
+  .roomTablet,
+  .chairTablet,
+  .museumTablet {
+    display: none;
+  }
+
+  #first .desktopImg,
+  .roomDesktop,
+  .chairDesktop,
+  .museumDesktop {
+    display: initial;
+  }
+
+  .black {
+    width: 31vw;
+    height: 799px;
+    background: black;
+    height: 100vh;
+  }
+
+  #first .desktopImg {
+    width: 37.5vw;
+    height: 100vh;
+  }
+
+  #first .forFlex {
+    display: flex;
+    width: 29vw;
+    margin-left: -5.2vw;
+  }
+
+  .forFlexInner {
+    margin-top: 13vw;
+    margin-left: 15.2vw;
+  }
+
+  #first p {
+    font-size: 1.5vw;
+    width: 29vw;
+  }
+
+  #first h1 {
+    margin-left: -51.5vw;
+    margin-top: 13vw;
+    font-size: 7vw;
+    max-width: 40vw;
+    width: 40vw;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, white 19vw, black 0px);
+  }
+
+  a {
+    height: 5vw;
+    width: 18vw;
+    margin-left: 4.5%;
+    margin-top: 32px;
+  }
+
+  .buttonLeft {
+    height: 5vw;
+    width: 16.6vw;
+  }
+
+  .buttonRight {
+    width: 1vw;
+    height: 2vw;
+    padding: 1.5vw;
+  }
+
+  .buttonRight img {
+    width: 1vw;
+    height: 2vw;
+  }
+  .buttonLeft h2 {
+    font-size: 1.3vw;
+    line-height: 24px;
+    line-height: 100%;
+    letter-spacing: 0.25vw;
+  }
+
+  #mainTabletAndDesktop {
+    grid-template-columns: 51.8vw 36.4vw;
+    grid-template-rows: 25vw 26.7vw 27.7vw;
+    height: 81.3vw;
+    gap: 30px;
+    margin-top: 15vw;
+    width: 89vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  #mainTabletAndDesktop .firstTitle {
+    width: 223px;
+    font-size: 5vw;
+    height: 10vw;
+    width: 30vw;
+    line-height: 100%;
+  }
+
+  #mainTabletAndDesktop p {
+    font-size: 1.5vw;
+    width: 15vw;
+    line-height: 100%;
+    height: 140px;
+  }
+
+  #mainTabletAndDesktop .grid-1 {
+    grid-area: 1 / 1;
+  }
+
+  #mainTabletAndDesktop .roomDesktop {
+    grid-area: 1 / 2;
+    width: 44vw;
+    height: 25vw;
+    margin-left: -7.6vw;
+  }
+
+  #mainTabletAndDesktop .chairDesktop {
+    grid-area: 2 / 1;
+    width: 51.8vw;
+    height: 55vw;
+  }
+
+  #mainTabletAndDesktop .museumDesktop {
+    grid-area: 2 / 2;
+    width: 36.4vw;
+    height: 26.7vw;
+  }
+
+  #mainTabletAndDesktop .last {
+    grid-area: 3 / 2;
+    width: 36.4vw;
+    min-height: 27.7vw;
+  }
+
+  #mainTabletAndDesktop .last h2 {
+    font-size: 5vw;
+    height: 5vw;
+    line-height: 100%;
+  }
+
+  #mainTabletAndDesktop .last p {
+    font-size: 2vw;
+    height: 20vw;
+    line-height: 100%;
+    margin-top: 8vw;
+  }
+
+  #footer {
+    height: 20vw;
+    margin-top: 20vw;
+  }
+
+  #footer p {
+    font-size: 1.2vw;
+    width: 25vw;
+  }
+
+  #footer .social {
+    width: 6vw;
+  }
+
+  #footer .social img {
+    width: 1.38vw;
+    height: 1.38vw;
+  }
+
+  #footer h3 {
+    width: 20vw;
+    font-size: 4vw;
+  }
+}
